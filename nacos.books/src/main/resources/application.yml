@@ -1,0 +1,22 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: books-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///mybookdb
+    username: root
+    password: root
+logging:
+  level:
+    root: info
+    org.springframework: info
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml

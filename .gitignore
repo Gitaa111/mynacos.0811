@@ -1,0 +1,4 @@
+# Project exclude paths
+/nacos.api/target/
+/nacos.books/target/
+/nacos.empinfo/target/
